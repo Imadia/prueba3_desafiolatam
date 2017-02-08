@@ -25,5 +25,5 @@ class Product
 	end
 end
 
-p = Product.new(2000,0)
+p = Product.new(2000,10)
 puts p.has_stock?
