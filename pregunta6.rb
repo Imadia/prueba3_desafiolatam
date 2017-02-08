@@ -9,11 +9,7 @@ end
 module Stockable
 	attr_accessor :stock
 	def has_stock?
-		if @stock > 0
-			true
-		else
-			false
-		end
+		return @stock > 0
 	end
 end
 	
@@ -25,5 +21,5 @@ class Product
 	end
 end
 
-p = Product.new(2000,10)
+p = Product.new(2000,1)
 puts p.has_stock?
